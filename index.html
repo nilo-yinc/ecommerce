@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEase - E-Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🛍️ ShopEase</div>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="products-section">
+      <h1>Products</h1>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items">
+        <p id="empty-cart">Your cart is empty.</p>
+      </div>
+      <div id="cart-total" class="cart-total hidden">
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Are you sure you want to checkout?</p>
+      <div class="modal-buttons">
+        <button id="confirm-checkout">Yes</button>
+        <button id="cancel-checkout">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
